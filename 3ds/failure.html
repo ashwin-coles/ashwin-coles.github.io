@@ -1,0 +1,12 @@
+<html>
+<head>
+	<script language="JavaScript"> function onLoadSubmit() { document.authenticationChallengeCompleteRedirectForm.submit(); } </script> </head> 
+<body onload="onLoadSubmit()"> 
+	<form id="authenticationChallengeCompleteRedirectForm" name="authenticationChallengeCompleteRedirectForm" method="POST" action="https://www.coles.com.au/3ds-callback"> 
+		<input type="hidden" name="order.id" value="xyz" /> 
+		<input type="hidden" name="transaction.id" value="abc-123" /> 
+		<input type="hidden" name="response.gatewayRecommendation" value="DO_NOT_PROCEED" />
+		<input type="hidden" name="result" value="FAILURE" />
+	</form> 
+</body> 
+</html>
