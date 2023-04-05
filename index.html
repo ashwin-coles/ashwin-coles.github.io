@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+		<form id ="threedsResultRedirectForm" method="POST"></form>
+        <br>
+        <br>
+        <center>
+            <a href="javascript:sendSuccess();" style="font-size: 20pt;">SUCCESS</a>
+			<br />
+			<br />
+			<a href="javascript:sendFailure();" style="font-size: 20pt;">FAILURE</a>
+        </center>
+		<script languate="javascript">
+			function sendSuccess() {
+				let e=document.getElementById("threedsResultRedirectForm");
+				e.action = "/3ds/success";
+				e.submit();
+			}
+			function sendFailure() {
+				let e=document.getElementById("threedsResultRedirectForm");
+				e.action = "/3ds/failure";
+				e.submit();
+			}
+		</script>
+    </body>
+</html>
